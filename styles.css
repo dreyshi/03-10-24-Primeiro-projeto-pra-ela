@@ -1,0 +1,75 @@
+body {
+    font: 15px normal;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #140a07;
+}
+
+.coração{
+    height: 110px;
+    width: 110px;
+    background: #0400f2;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #0400f2;
+    animation: heart 0.6s linear infinite; 
+}
+
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);    
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+
+}
+
+.coração:before{
+    content: '';
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    background: #0400f2;
+    top: -50%;
+    border-radius: 70px;
+    box-shadow: -10px -10px 90px #0400f2;
+}
+
+.coração:after{
+        content: '';
+        position: absolute;
+        height: 110px;
+        width: 110px;
+        background: #0400f2;
+        right: -50%;
+        border-radius: 70px;
+        box-shadow: -10px -10px 90px #0400f2;
+}
+
+h1{
+    color:rgb(147, 169, 189);
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    vertical-align: bottom;
+    bottom: -100px;
+    right: 125px;
+    font-style: oblique;
+}
+h2{
+    color:rgb(147, 169, 189);
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    vertical-align: bottom;
+    bottom: -140px;
+    right: 500px;
+}
